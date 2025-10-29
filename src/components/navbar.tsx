@@ -10,8 +10,10 @@ const NavLink = ({ href, label }: { href: string; label: string }) => {
   return (
     <Link
       href={href}
-      className={`px-3 py-2 rounded-lg text-sm font-medium transition-all hover:bg-accent hover:text-accent-foreground ${
-        active ? "bg-accent text-accent-foreground" : "text-muted-foreground"
+      className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+        active 
+          ? "bg-gradient-to-r from-blue-600/30 to-purple-600/30 text-blue-300 border border-blue-500/50" 
+          : "text-gray-400 hover:text-blue-300 hover:bg-blue-500/10"
       }`}
     >
       {label}
@@ -21,13 +23,13 @@ const NavLink = ({ href, label }: { href: string; label: string }) => {
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 backdrop-blur-xl bg-background/80 supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-blue-500/20 backdrop-blur-xl bg-black/80 supports-[backdrop-filter]:bg-black/60 shadow-lg shadow-blue-500/10">
       <div className="mx-auto max-w-7xl px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-chart-1 flex items-center justify-center text-primary-foreground">
+        <Link href="/" className="flex items-center gap-2 font-bold text-xl group">
+          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white border border-blue-400/50 box-glow-blue group-hover:scale-110 transition-transform">
             ⚡
           </div>
-          <span className="bg-gradient-to-r from-primary to-chart-1 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-gradient text-glow-blue text-2xl font-extrabold">
             FairSwap
           </span>
         </Link>
@@ -37,7 +39,7 @@ export default function Navbar() {
           <NavLink href="/about" label="About" />
         </nav>
         <div className="flex items-center gap-3">
-          <WalletMultiButton className="!bg-primary !text-primary-foreground !rounded-lg !px-4 !py-2 !h-auto !font-medium hover:!bg-primary/90 !transition-all" />
+          <WalletMultiButton className="!bg-gradient-to-r !from-blue-600 !to-purple-600 hover:!from-blue-500 hover:!to-purple-500 !text-white !rounded-lg !px-4 !py-2 !h-auto !font-medium !transition-all !border !border-blue-400/50 !shadow-lg !shadow-blue-500/30 hover:!shadow-blue-500/50 hover:!scale-105" />
         </div>
       </div>
     </header>
