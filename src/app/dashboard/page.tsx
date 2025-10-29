@@ -38,10 +38,10 @@ export default function DashboardPage() {
           <div className="absolute top-10 right-1/4 w-96 h-96 bg-chart-1/20 rounded-full blur-3xl animate-pulse delay-700" />
         </div>
 
-        <Badge className="w-fit text-sm px-4 py-1.5" variant="secondary">
+        {/* <Badge className="w-fit text-sm px-4 py-1.5" variant="secondary">
           <span className="inline-block animate-pulse mr-2">📊</span>
           Intent Dashboard
-        </Badge>
+        </Badge> */}
 
         <div className="space-y-2">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-chart-1 to-primary bg-clip-text text-transparent animate-gradient">
@@ -180,10 +180,10 @@ export default function DashboardPage() {
                         <div className="space-y-2">
                           <p className="text-base font-semibold flex items-center gap-2">
                             <span className="text-primary">📤</span>
-                            {intent.fromMint.slice(0, 8)}...
+                            {intent.fromMint.slice(0, 8)}
                             <span className="text-muted-foreground">→</span>
                             <span className="text-primary">📥</span>
-                            {intent.toMint.slice(0, 8)}...
+                            {intent.toMint.slice(0, 8)}
                           </p>
                           <div className="flex gap-4 text-sm text-muted-foreground">
                             <span className="flex items-center gap-1.5">
@@ -207,7 +207,7 @@ export default function DashboardPage() {
                           </div>
                         </div>
                         <p className="text-xs text-muted-foreground font-mono bg-muted/50 px-2 py-1 rounded w-fit">
-                          ID: {intent.id.slice(0, 16)}...
+                          ID: {intent.id.slice(0, 16)}
                         </p>
                       </div>
                       <div className="flex sm:flex-col gap-2 sm:justify-center sm:min-w-[140px]">

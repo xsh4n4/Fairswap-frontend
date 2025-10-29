@@ -21,13 +21,13 @@ export default function Home() {
           <div className="absolute bottom-0 left-1/2 w-[400px] h-[400px] bg-cyan-600/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
         </div>
 
-        <Badge className="mx-auto w-fit text-sm px-4 py-1.5 border-glow animate-scale-in" variant="secondary">
+        {/* <Badge className="mx-auto w-fit text-sm px-4 py-1.5 border-glow animate-scale-in" variant="secondary">
           <span className="inline-block animate-pulse mr-2">⚡</span>
           Intent-Based Trading on Solana
-        </Badge>
+        </Badge> */}
 
         <div className="space-y-4 animate-float">
-          <h1 className="text-6xl md:text-8xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-gradient text-glow-blue">
+          <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-gradient text-glow-blue">
             Welcome to FairSwap
           </h1>
 
@@ -43,7 +43,7 @@ export default function Home() {
                 searchers compete in auctions to give you the best execution prices.
               </p>
 
-              <div className="grid md:grid-cols-3 gap-4 pt-2">
+              {/* <div className="grid md:grid-cols-3 gap-4 pt-2">
                 <div className="flex items-center gap-2 text-sm">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                   <span className="text-muted-foreground">No sandwich attacks</span>
@@ -56,7 +56,7 @@ export default function Home() {
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                   <span className="text-muted-foreground">Fair & transparent</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -100,7 +100,7 @@ export default function ResultPage({
                   Transaction Signature
                 </p>
                 <div className="flex items-center gap-2 bg-muted p-3 rounded-lg">
-                  <p className="font-mono text-xs break-all flex-1">
+                  <p className="font-mono text-xs break-all flex-1 text-black">
                     {intent.tx}
                   </p>
                   <a
@@ -116,20 +116,6 @@ export default function ResultPage({
                 </div>
               </div>
 
-              <Card className="bg-muted/50 border-dashed">
-                <CardContent className="pt-4">
-                  <div className="flex gap-2 items-start">
-                    <Badge variant="secondary" className="mt-0.5">
-                      ℹ️ Demo
-                    </Badge>
-                    <p className="text-xs text-muted-foreground">
-                      In this prototype, the transaction signature is simulated.
-                      In production, this will be a real on-chain transaction
-                      that you can verify on Solscan.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           ) : (
             <div className="pt-4 border-t">
@@ -153,7 +139,7 @@ export default function ResultPage({
           <CardContent>
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center p-4 rounded-lg bg-muted/50">
-                <p className="text-2xl font-bold text-green-500">0.42%</p>
+                <p className="text-2xl font-bold text-green-900">0.42%</p>
                 <p className="text-xs text-muted-foreground">Price Impact</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-muted/50">

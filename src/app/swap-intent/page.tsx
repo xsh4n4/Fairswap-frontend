@@ -66,13 +66,13 @@ export default function SwapIntentPage() {
           <div className="absolute top-10 right-1/3 w-96 h-96 bg-chart-1/20 rounded-full blur-3xl animate-pulse delay-700" />
         </div>
 
-        <Badge
+        {/* <Badge
           className="mx-auto w-fit text-sm px-4 py-1.5"
           variant="secondary"
         >
           <span className="inline-block animate-pulse mr-2">🎯</span>
           Intent-Based Swaps
-        </Badge>
+        </Badge> */}
 
         <div className="space-y-4">
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-chart-1 to-primary bg-clip-text text-transparent animate-gradient">
@@ -223,7 +223,7 @@ export default function SwapIntentPage() {
               )}
             </Button>
 
-            <Card className="bg-gradient-to-br from-primary/5 to-chart-1/5 border-primary/20 border-dashed">
+            {/* <Card className="bg-gradient-to-br from-primary/5 to-chart-1/5 border-primary/20 border-dashed">
               <CardContent className="pt-6">
                 <div className="flex gap-3 items-start">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">
@@ -242,7 +242,7 @@ export default function SwapIntentPage() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </CardContent>
       </Card>

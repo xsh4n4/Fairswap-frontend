@@ -18,13 +18,13 @@ export default function AboutPage() {
           <div className="absolute top-10 right-1/3 w-96 h-96 bg-chart-1/20 rounded-full blur-3xl animate-pulse delay-700" />
         </div>
 
-        <Badge
+        {/* <Badge
           className="mx-auto w-fit text-sm px-4 py-1.5"
           variant="secondary"
         >
           <span className="inline-block animate-pulse mr-2">ℹ️</span>
           About the Project
-        </Badge>
+        </Badge> */}
         <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-chart-1 to-primary bg-clip-text text-transparent animate-gradient">
           About FairSwap
         </h1>
@@ -400,10 +400,10 @@ export default function AboutPage() {
       <Card className="text-center bg-gradient-to-br from-primary/5 to-chart-1/5 border-primary/20 border-dashed shadow-lg relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/5 [mask-image:linear-gradient(0deg,white,transparent)]" />
         <CardContent className="pt-6 space-y-3 relative">
-          <div className="text-4xl">🚀</div>
-          <Badge variant="secondary" className="text-sm px-3 py-1">
+          {/* <div className="text-4xl">🚀</div> */}
+          {/* <Badge variant="secondary" className="text-sm px-3 py-1">
             Prototype Stage
-          </Badge>
+          </Badge> */}
           <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto">
             FairSwap is currently in{" "}
             <strong className="text-foreground">prototype stage</strong>. Smart
